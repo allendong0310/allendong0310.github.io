@@ -1,211 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>allendong</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="bootstrap.min.js"></script>
-  
-
-   <script type="text/javascript">
-   window.onload=function(){
-     var oDiv=document.getElementById('main');
-     var oMenu=document.getElementsByClassName('menu')[0];
-     var oCn=oMenu.getElementsByTagName('div');
-     
-     var i=window.innerHeight;
-     oDiv.style.height=i*5+'px';
-     oMenu.style.top=i/2.5+'px';
-
-     var canvas01=document.getElementById("canvas01");
-	 var clock=canvas01.getContext("2d");
-	  
-     function timer(){
-       clock.clearRect(0,0,600,400);
-
-       var time=new Date();
-       var hours=time.getHours();
-       var mins=time.getMinutes();
-       var sec = time.getSeconds();
-
-       
-
-       clock.lineWidth=5;
-       clock.strockStyle="#000";
-       clock.beginPath();
-       clock.arc(300,200,150,0,360,false);
-       clock.stroke();
-       clock.closePath();
-       
-       for(var i=0;i<12;i++)
-       	{
-       		clock.save();
-       		clock.translate(300,200);
-       		clock.lineWidth=5;
-       		clock.strockStyle="#000";
-       		clock.beginPath();
-       		clock.rotate(i*30*Math.PI/180);
-       		clock.moveTo(0,-130);
-       		clock.lineTo(0,-150);
-       		clock.stroke();
-       		clock.closePath();
-       		clock.restore();
-     	};
-
-     	for(var i=0;i<60;i++)
-       	{
-       		clock.save();
-       		clock.translate(300,200);
-       		clock.lineWidth=3;
-       		clock.strockStyle="#000";
-       		clock.beginPath();
-       		clock.rotate(i*6*Math.PI/180);
-       		clock.moveTo(0,-140);
-       		clock.lineTo(0,-150);
-       		clock.stroke();
-       		clock.closePath();
-       		clock.restore();
-     	};
-     
-     	    clock.save();
-       		clock.translate(300,200);
-       		clock.lineWidth=5;
-       		clock.strockStyle="#000";
-       		clock.rotate(hours*30*Math.PI/180);
-       		clock.beginPath();
-       		clock.moveTo(0,0);
-       		clock.lineTo(0,-70);
-       		clock.stroke();
-       		clock.closePath();
-       		clock.restore();
-
-       		clock.save();
-       		clock.translate(300,200);
-       		clock.lineWidth=3;
-       		clock.strockStyle="#000";
-       		clock.rotate(mins*6*Math.PI/180);
-       		clock.beginPath();
-       		clock.moveTo(0,0);
-       		clock.lineTo(0,-100);
-       		clock.stroke();
-       		clock.closePath();
-       		clock.restore();
-
-       		clock.save();
-       		clock.translate(300,200);
-       		clock.lineWidth=3;
-       		clock.strockStyle="#000";
-       		clock.rotate(sec*6*Math.PI/180);
-       		clock.beginPath();
-       		clock.moveTo(0,0);
-       		clock.lineTo(0,-130);
-       		clock.stroke();
-       		clock.closePath();
-       		clock.restore();
-}
-       		timer();
-       		setInterval(timer,30);
-   };
-  </script>
-
-  <style>
-  body {}
-  @media screen and (min-width: 212px) and (max-width: 480px){
-  html{font-size:4px;}
-  #section1 img{margin-left: 15%;margin-top:45%;width: 70%;}
-  #section4 img{margin-left: 6%;margin-top:35%;width: 90%;}
-  #section4 p{margin:auto;font-size: 3rem;}
-  .tex-4{width: 100%;margin: auto;}
-  }
-  @media screen and (min-width: 480px) and (max-width: 700px){
-  html{font-size:8px;}
-  #section1 img{margin-left: 25%;margin-top:4%;width: 50%;}
-  #section4 img{width: 100%;}
-  #section4 p{margin:auto;font-size: 2rem;}
-  .img-4{width: 50%;margin-top:15%;}
-  .tex-4{width: 50%;margin: auto;}
-  }
-  @media screen and (min-width: 700px) and (max-width: 1100px){
-  #section4 img{width: 50%;}
-  .img-4{width: 50%;margin-top:15%;float: left;}
-  }
-
-  #section1 {padding:50px;height:25%;color: #fff; background-color: #778899;}
-  #section2 {padding:50px;height:25%;color: #fff; background-color: #FFA07A;}
-  #section3 {padding:50px;height:25%;color: #fff; background-color: #6495ED;}
-  #section4 {padding:50px;height:25%;color: #fff; background-color: #66CDAA;}
-  .menu{position:fixed;z-index:1;width: 6px;height: 6px;}
-  .menu li{background:#c0c0c0;}
-  .pho{margin-top: 5%;}
-  .img-1 img{margin-left: 33%;margin-top:10%;width: 35%;}
-  .font-1{text-align:center;font-size: 6rem;}
-  .font-1-1{text-align:center;font-size: 3rem;}
-  .img-4{float: left;margin-left: 5%;margin-top:10%;}
-  .img-4 img{width: 100%;}
-  .tex-4{text-align:center;font-size: 2rem;float: left;margin-top:15%;margin-left:10%;}
-  #convas01{width: 100%;}
-  .img-2 img{margin-left: 10%;margin-top:5%;width: 35%;float: left;}
-  </style>
-
+	<title>allendong</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="resouces/css/bootstrap.min.css">
+	<script type="text/javascript" src="resouces/js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="resouces/js/index.js"></script>
+	<link rel="stylesheet" href="resouces/css/index.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">   
-
-        </button>
-        <a class="navbar-brand" href="#">Volcano</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">草莓</a></li>
-          <li><a href="#section2">橘子</a></li>
-          <li><a href="#section3">西瓜</a></li>
-          <li><a href="#section4">玫瑰</a></li>
-        </ul>
-      </div>
-	  <div>
-	    <ul class="nav nav-tabs nav-stacked menu">
-			<li><a href="#section1"></a></li>
-			<li><a href="#section2"></a></li>
-			<li><a href="#section3"></a></li>
-			<li><a href="#section4"></a></li>
-	    </ul>
-	   </div>     
-    </div>
-  </div>
-</nav>   
-                
-<div id="main">
-<div id="section1" class="container-fluid">
-     <div class="img-1"><img src="240_1.jpg"></div>
-     <div class="font-1">董佩</div>
-     <div class="font-1-1">永远傻逼 永远热泪盈眶</div>
-</div>
-<div id="section2" class="container-fluid">
-  <div class="img-2">
-  <a href="weixin.png"><img src="weixin.png"></a>
-  </div>
-</div>
-<div id="section3" class="container-fluid ">
-  <div class="row" style="float:left;"> 
-	 <canvas id="canvas01" class="col-lg-12 col-md-12 col-xs-12" width="900" height="400">
-	 </canvas>
-  </div>
-  <div style="float:left;">
-  <h1>技能</h1>
-  <p>好像没啥特别技能<br>能吃<br>能睡<br>算不算<br>？</p>
-  </div>
-</div>
-<div id="section4" class="container-fluid">
-     <div class="img-4"><img src="city-people-walking-blur-medium.jpg"></div>
-     <div class="tex-4"><p>在匆忙而拥挤的人群众<br/>我和你一样说过很多潇洒的话<br/>做过很多打脸的事<br/>励志不是梦幻人间<br/>而是大家活的差不多<br/>照样兵来将挡水来土掩<br/>愿你万事胜意</p>
-     </div>
-</div>
-</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"></button>
+				<a class="navbar-brand" href="#">Volcano</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#section1">About</a></li>
+						<li><a href="#section2">Professions</a></li>
+						<li><a href="#section3">Work</a></li>
+						<li><a href="#section4">More</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="nav nav-tabs nav-stacked menu">
+						<li><a href="#section1"></a></li>
+						<li><a href="#section2"></a></li>
+						<li><a href="#section3"></a></li>
+						<li><a href="#section4"></a></li>
+					</ul>
+				</div>     
+			</div>
+		</div>
+	</nav>   
+	<div id="main">
+		<div id="section1" class="container-fluid">
+			<div class="img-1">
+				<img src="resouces/images/about-me.jpg">
+			</div>
+			<div class="font-1">董佩</div>
+			<div class="font-1-1"><h3>丧并code着</h3><h1>前端开发程序媛</h1><h2>西安邮电大学</h2><h4>电子信息工程</h4></div>
+		</div>
+		<div id="section2" class="container-fluid">
+			<div class="content-2">
+				<h1>技能</h1>
+				<h2>CSS less HTML Bootstrap</h2>
+				<h2>Javascript Jquery AngularJs vue node echart</h2>
+				<h3>node webpack</h3>
+			</div>
+		</div>
+		<div id="section3" class="container-fluid">
+			<div class="row" style="float:left;"> 
+				<canvas id="canvas01" class="col-lg-12 col-md-12 col-xs-12" width="900" height="400">
+				</canvas>
+			</div>
+			<div style="float:left;">
+				<h1>经验</h1>
+				<h2>传音控股</h2>
+				<h3>移动端开发</h3>
+			</div>
+			<h3><a href="">github</a></h3>
+		</div>
+		<div id="section4" class="container-fluid">
+			<div class="img-4">
+				<img src="resouces/images/city-people-walking-blur-medium.jpg">
+			</div>
+			<h5>微博</h5><h5>豆瓣</h5><h5>知乎</h5><h5>公主号</h5>
+			<div class="tex-4"><p>在匆忙而拥挤的人群众/我和你一样说过很多潇洒的话/做过很多打脸的事/励志不是梦幻人间/而是大家活的差不多/照样兵来将挡水来土掩/愿你万事胜意</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

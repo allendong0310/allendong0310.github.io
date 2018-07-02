@@ -1,0 +1,37 @@
+@media screen and (min-width: 212px) and (max-width: 480px){
+		html{font-size:4px;}
+		#section1 img{margin-left: 15%;margin-top:45%;width: 70%;}
+		#section4 img{margin-left: 6%;margin-top:35%;width: 90%;}
+		#section4 p{margin:auto;font-size: 3rem;}
+		.tex-4{width: 100%;margin: auto;}
+}
+@media screen and (min-width: 480px) and (max-width: 700px){
+		html{font-size:8px;}
+		#section1 img{margin-left: 25%;margin-top:4%;width: 50%;}
+		#section4 img{width: 100%;}
+		#section4 p{margin:auto;font-size: 2rem;}
+		.img-4{width: 50%;margin-top:15%;}
+		.tex-4{width: 50%;margin: auto;}
+		}
+		@media screen and (min-width: 700px) and (max-width: 1100px){
+		#section4 img{width: 50%;}
+		.img-4{width: 50%;margin-top:15%;float: left;}
+}
+h1,h2,h3,h4,h5,h6 {text-align: center;}
+.content-2 {margin-top: 20%;}
+#section1 {padding:50px;height:25%;color: #fff; background-color: #778899;}
+#section2 {padding:50px;height:25%;color: #fff; background-color: #FFA07A;}
+#section3 {padding:50px;height:25%;color: #fff; background-color: #6495ED;}
+#section4 {padding:50px;height:25%;color: #fff; background-color: #66CDAA;}
+.menu{position:fixed;z-index:1;width: 6px;height: 6px;}
+.menu li{background:#c0c0c0;}
+.pho{margin-top: 5%;}
+.img-1 img{margin-left: 39%;margin-top: 10%;width: 23%;}
+.font-1{text-align:center;font-size: 6rem;}
+.font-1-1{text-align:center;font-size: 3rem;}
+.img-4{float: left;margin-left: 5%;margin-top:10%;}
+.img-4 img{width: 100%;}
+.tex-4{text-align:center;font-size: 2rem;float: left;margin-top:15%;margin-left:10%;}
+#convas01{width: 100%;}
+.img-2 img{margin-left: 10%;margin-top:5%;width: 35%;float: left;}
+.navbar {position: fixed;}
