@@ -4,6 +4,8 @@ window.onload=function(){
 	var oCn=oMenu.getElementsByTagName('div');
 
 	var i=window.innerHeight;
+	console.log(i);
+	console.log(i*4);
 	oDiv.style.height=i*4+'px';
 	oMenu.style.top=i/2.5+'px';
 

@@ -3,14 +3,13 @@
 		#section1 img{margin-left: 15%;margin-top:45%;width: 70%;}
 		#section4 img{margin-left: 6%;margin-top:35%;width: 90%;}
 		#section4 p{margin:auto;font-size: 3rem;}
-		.tex-4{width: 100%;margin: auto;}
 }
 @media screen and (min-width: 480px) and (max-width: 700px){
 		html{font-size:8px;}
 		#section1 img{margin-left: 25%;margin-top:4%;width: 50%;}
 		#section4 img{width: 100%;}
 		#section4 p{margin:auto;font-size: 2rem;}
-		.img-4{width: 50%;margin-top:15%;}
+		.img-4{width: 50%;margin-top:10%;}
 		.tex-4{width: 50%;margin: auto;}
 		}
 		@media screen and (min-width: 700px) and (max-width: 1100px){
@@ -30,8 +29,8 @@ h1,h2,h3,h4,h5,h6 {text-align: center;}
 .font-1{text-align:center;font-size: 6rem;}
 .font-1-1{text-align:center;font-size: 3rem;}
 .img-4{float: left;margin-left: 5%;margin-top:10%;}
-.img-4 img{width: 100%;}
-.tex-4{text-align:center;font-size: 2rem;float: left;margin-top:15%;margin-left:10%;}
+.img-4 img{width: 100%;margin-top:15%;}
 #convas01{width: 100%;}
 .img-2 img{margin-left: 10%;margin-top:5%;width: 35%;float: left;}
 .navbar {position: fixed;}
+.txt-4 {text-align: center;position: relative;bottom: -109px;clear: both;}
